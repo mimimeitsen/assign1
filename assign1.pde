@@ -31,7 +31,8 @@ void draw()
   x+=2;
   image(bg2,x,0);
   image(bg1,x-bg2.width,0);
-  x %=640;
+  image(bg2,x-bg2.width-bg1.width,0);
+  x %=bg1.width+bg2.width;
   //background 
   
   image(fighter,560,240);
